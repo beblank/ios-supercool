@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SuperCool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="cYM-mm-sSl">
+                                <rect key="frame" x="-181" y="-35" width="664" height="603"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="664" id="sAb-Ks-wHr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5pi-5C-mhe">
+                                <rect key="frame" x="68" y="269" width="185" height="30"/>
+                                <state key="normal" title="Make Me Super Cool!"/>
+                                <connections>
+                                    <action selector="makeMeNotSoUncool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="log-WK-Cf4"/>
+                                </connections>
+                            </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boom-App" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-2I-eZV">
+                                <rect key="frame" x="40" y="54" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R2R-2I-eZV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="0Vb-nT-bdn"/>
+                            <constraint firstItem="5pi-5C-mhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="52" id="18g-eb-GCu"/>
+                            <constraint firstItem="cYM-mm-sSl" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="1ol-hx-qX7"/>
+                            <constraint firstItem="cYM-mm-sSl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-181" id="2xH-EZ-kbD"/>
+                            <constraint firstItem="R2R-2I-eZV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="DPs-3z-VGW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5pi-5C-mhe" secondAttribute="bottom" constant="269" id="S3C-S2-bgD"/>
+                            <constraint firstItem="cYM-mm-sSl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-35" id="SVp-8Z-pms"/>
+                            <constraint firstItem="5pi-5C-mhe" firstAttribute="top" secondItem="R2R-2I-eZV" secondAttribute="bottom" constant="87" id="g0P-pr-HCx"/>
+                            <constraint firstItem="R2R-2I-eZV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hda-cf-f9T"/>
+                            <constraint firstItem="5pi-5C-mhe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="teJ-8b-5sj"/>
+                            <constraint firstItem="R2R-2I-eZV" firstAttribute="centerX" secondItem="5pi-5C-mhe" secondAttribute="centerX" id="yOy-nJ-EU2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="coolBG" destination="cYM-mm-sSl" id="6ST-9h-VD1"/>
+                        <outlet property="coolLogo" destination="R2R-2I-eZV" id="7Wz-ah-uqd"/>
+                        <outlet property="uncoolButton" destination="5pi-5C-mhe" id="Ya5-Uf-j47"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Boom-App" width="554" height="110"/>
+        <image name="bg" width="1667" height="1667"/>
+    </resources>
+</document>
